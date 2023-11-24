@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); */
+    background-color: #f9f9f9;
+    background-image: linear-gradient(160deg, #f9f9f9 0%, #4a2a2a 100%);
+
+}
+
+.navContainer{
+    width: 100vw;
+    /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    background-color: #1c1f1f;
+    background-image: linear-gradient(160deg, #1c1f1f 0%, #80D0C7 100%);
+
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navContainer nav{
+    width: 100%;
+    padding-right: 2rem;
+}
+#navULlist{
+    width: 100%;
+    list-style: none;
+    margin-left: 10px;
+    margin-right:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}
+
+#navhadding{
+
+    font-size: 2.6rem;
+    color: white;
+
+}
+
+#navAlist{
+    font-size: 2rem;
+    display: flex;
+    gap: 20px;
+}
+
+#Home:hover{
+    transform: scale(1.07);
+
+}
+#About:hover{
+    transform: scale(1.07);
+
+}
+
+#Contact:hover{
+    transform: scale(1.07);
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.contentBox{
+    width: 50%;
+    margin: auto;
+    /* margin-bottom: 5px; */
+    /* border: 1px solid rgb(5, 5, 5); */
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 10px;
+    padding: 3rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.rightBox{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.rightBox img{
+    height: 360px;
+    border-radius: 20px;
+    transition: all 0.8s linear 0s;
+}
+
+.rightBox #overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(39, 35, 35, 0.63);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+
+}
+
+.rightBox:hover #overlay{
+    opacity: 1;
+}
+
+.rightBox #overlay span{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.rightBox:hover{
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+#leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#leftBox h2{
+    font-size: 2rem;
+}
+
+.IngradiantsBox, .RecipeBox{
+    font-size: 1.1rem;
+}
+
+
+
+.footerBox{
+    /* background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%); */
+    background-color: #1c1f1f;
+    background-image: linear-gradient(160deg, #1c1f1f 0%, #80D0C7 100%);
+
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerBox p{
+    color: white;
+}
+
+.mydetail{
+    width: 100%;
+    height: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+
+.RightID img{
+   height: 150px;
+}
